@@ -1,8 +1,6 @@
 .masthead.segment {
 	min-height: 755px;
 	padding: 1em 0em;
-	background-image: url("../media/intro.jpg") !important;
-	background-size: cover !important;
 }
 .uitext.container {
 	margin-top: 3em !important;
