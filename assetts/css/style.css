@@ -1,0 +1,55 @@
+.masthead.segment {
+	min-height: 755px;
+	padding: 1em 0em;
+	background-image: url("../media/intro.jpg") !important;
+	background-size: cover !important;
+}
+.uitext.container {
+	margin-top: 3em !important;
+	margin-bottom: 0em !important;
+}
+
+.ui.text.container {
+	background-color: #feda6a !important;
+	border-radius: 10px !important;
+	margin-top: 13em !important;
+	margin-bottom: 0em !important;
+}
+
+.ui.text.container h1{
+	color: #393f4d !important;
+}
+
+.ui.text.container h2{
+	color: #393f4d !important;
+}
+
+.inner {
+	background-color: #feda6a !important;
+	color: #393f4d !important;
+}
+
+.outer {
+	background-color: #393f4d !important;
+	color: #d4d4dc !important;
+}
+
+#introBtns {
+	margin-top: 320px;
+}
+
+#aboutMe {
+	margin: 2em 2em;
+}
+
+.customFont {
+	font-family: "Russo One", sans-serif !important;
+}
+
+p {
+	color: black;
+}
+
+body {
+	background-color: #393f4d;
+}
