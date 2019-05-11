@@ -1,53 +1,53 @@
+
+/* Intro */
+
 .masthead.segment {
-	min-height: 755px;
+	min-height: 700px;
 	padding: 1em 0em;
-}
-.uitext.container {
-	margin-top: 3em !important;
-	margin-bottom: 0em !important;
-}
-
-.ui.text.container {
-	background-color: #feda6a !important;
-	border-radius: 10px !important;
-	margin-top: 13em !important;
-	margin-bottom: 0em !important;
+	padding-top: 1em;
+	padding-right: 0em;
+	padding-bottom: 1em;
+	padding-left: 0em;
+	background-color: transparent !important;
 }
 
-.ui.text.container h1{
-	color: #393f4d !important;
+.masthead h1.ui.header {
+	margin-top: 8em;
+	margin-bottom: 0em;
+	font-size: 2em;
+	font-weight: normal;
 }
 
-.ui.text.container h2{
-	color: #393f4d !important;
+.masthead h2 {
+	margin-bottom: 2em;
+	font-weight: normal;
 }
 
-.inner {
-	background-color: #feda6a !important;
-	color: #393f4d !important;
+.masthead div.ui.button {
+	margin-top: 0em;
+	margin-bottom: 11em;
+	padding: 20px;
 }
 
-.outer {
-	background-color: #393f4d !important;
-	color: #d4d4dc !important;
+.masthead div.ui.button .fas{
+	transition: 0.2s;
 }
 
-#introBtns {
-	margin-top: 320px;
+.masthead div.ui.button:hover .fas {
+	transition: 0.2s;
+	-moz-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+	-webkit-transform: rotate(90deg);
+	transform: rotate(90deg);
 }
 
-#aboutMe {
-	margin: 2em 2em;
-}
+/* About Me */
 
-.customFont {
-	font-family: "Russo One", sans-serif !important;
+.ui img#bioImg {
+	height: 50% !important;
+	object-fit: scale-down !important;
 }
 
 p {
-	color: black;
-}
-
-body {
-	background-color: #393f4d;
+  text-indent: 50px;
 }

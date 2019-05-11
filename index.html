@@ -4,14 +4,11 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Kent Okazaki's Portfolio</title>
+		<link rel="stylesheet" href="./assetts/css/reset.css" />
 		<link
 			rel="stylesheet"
 			type="text/css"
 			href="semantic/dist/semantic.min.css"
-		/>
-		<link
-			href="https://fonts.googleapis.com/css?family=Russo+One"
-			rel="stylesheet"
 		/>
 		<link
 			rel="stylesheet"
@@ -19,94 +16,58 @@
 			integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
 			crossorigin="anonymous"
 		/>
-		<link rel="stylesheet" href="./assetts/css/reset.css" />
-		<link rel="stylesheet" href="./assetts/css/style.css" />
-		<link rel="stylesheet" href="./assetts/css/animate.css">
+
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+		<link rel="stylesheet" href="assetts/css/style.css" />
+		<link rel="stylesheet" href="assetts/css/animate.css" />
+		<link rel="stylesheet" href="assetts/css/particles.css" />
 	</head>
-	<body id="body">
-		<div
-			class="ui inverted vertical masthead center aligned segment animated zoomIn"
-		>
-			<div class="ui text container grid animated zoomIn">
-				<div class="ui one column inverted header" id="introName">
-					<h1 class="ui customFont">
-						Kent Okazaki
+	<body>
+		<div class="animated zoomIn" id="particles-js"></div>
+		<div id="pusher" id="1">
+			<div
+				class="ui inverted vertical masthead massive center aligned segment animated zoomIn"
+			>
+				<div class="ui text container animated fadeIn slow">
+					<h1 class="ui inverted header">
+						Hi, my name is <strong>Kent Okazaki.</strong>
 					</h1>
-					<h2 class="ui customFont">Welcome to my website!</h2>
+					<h2>I am a full-stack web developer.</h2>
+					<div class="ui huge inverted button" id="introBtn">
+						Learn More About Me
+						<i class="fas fa-arrow-right introArrow"></i>
+					</div>
 				</div>
-			</div>
-			<div class="ui container animated fadeIn slow">
-				<div class="ui massive buttons centered grid" id="introBtns">
-					<div
-						class="ui column outer button center aligned animated fade introBtn fadeInLeft"
-					>
-						<div class="visible content customFont">About Me</div>
-						<div class="hidden outer content customFont">
-							<i class="fas fa-address-card"></i>
-							Kent Okazaki
-						</div>
-					</div>
-					<div
-						class="ui column inner button center aligned animated fade introBtn zoomIn"
-					>
-						<div class="visible content customFont">Portfolio</div>
-						<div class="hidden inner content customFont">
-							<i class="fas fa-code"></i>
-							My Work
-						</div>
-					</div>
-					<div
-						class="ui column outer button center aligned animated fade introBtn fadeInRight"
-					>
-						<div class="visible content customFont">GitHub</div>
-						<div class="hidden outer content customFont">
-							<i class="fab fa-github"></i>
-							randomslap
-						</div>
+				<div class="ui container">
+					<div class="ui large secondary inverted pointing menu centered">
+						<a class="active item" href="#1">Home</a>
+						<a class="item" href="#2">About Me</a>
+						<a class="item">Portfolio</a>
+						<a class="item">Contact Me</a>
 					</div>
 				</div>
 			</div>
 		</div>
-
-		<div class="ui container" id="aboutMe">
-			<div class="row">
-				<div class="ui three column centered grid">
-					<div class="column">
-						<div class="ui center aligned segment">
-							About Me
-						</div>
-					</div>
+		<div class="ui inverted" id="2">
+			<div class="ui centered grid">
+				<div class="three wide column center aligned" data-aos="fade-down">
+					<h1>About Me</h1>
 				</div>
 			</div>
-			<div class="row">
-				<div class="ui three column divided centered grid stackable">
-					<div class="row">
-						<div class="column">
-							<div class="ui segment">
-								<img
-									class="ui centered image animated fadeIn slower circular"
-									src="https://via.placeholder.com/450"
-									alt="profile picture"
-								/>
-							</div>
-						</div>
-						<div class="column">
-							<div class="ui segment animated fadeIn slower">
-								<p>
-									My name is Kent Okazaki. I am 21 years old and I was born and
-									raised in San Diego. Technology has always been an interest of
-									mine. I got myself into programming in 2011. It started off
-									with "rooting" my first android device. In the beginning of
-									2012, I joined a video game modding community. The main game
-									titles that I was involved modding with were "ArmA 2" and
-									"ArmA 3". This is where I taught myself C++ and MySQL. For
-									about 4 years, during high school, I continued to develop
-									addons and content for the two games. After graduating high
-									school, I went on to learn Java at a community college.
-									As of 2019, I am currently taking a full stack web development bootcamp at UCSD by TrilogyEd.
-								</p>
-							</div>
-						</div>
+			<div class="ui grid stackable centered">
+				<div class="five wide column" data-aos="fade-right">
+					<div class="ui segment">
+						<img
+							class="ui medium circular image fluid centered"
+							id="bioImg"
+							src="assetts/media/bio.JPG"
+							alt="Bio Picture"
+						/>
+					</div>
+				</div>
+				<div class="eight wide column" data-aos="fade-left">
+					<div class="ui segment">
+						<p id="aboutMe"></p>
 					</div>
 				</div>
 			</div>
@@ -117,6 +78,10 @@
 		integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
 		crossorigin="anonymous"
 	></script>
+	<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 	<script src="semantic/dist/semantic.min.js"></script>
-	<script src="./assetts/js/intro.js"></script>
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script src="assetts/js/app.js"></script>
+	<script src="assetts/js/particle.js"></script>
+	<script src="assetts/js/aos.js"></script>
 </html>
