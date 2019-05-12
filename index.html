@@ -32,13 +32,15 @@
 					<h1 class="ui inverted header">
 						Hi, my name is <strong>Kent Okazaki.</strong>
 					</h1>
-					<h2>I am a full-stack web developer.</h2>
-					<div class="ui huge inverted button" id="introBtn">
-						Learn More About Me
-						<i class="fas fa-arrow-right introArrow"></i>
-					</div>
+					<h2>I am a web developer.</h2>
+					<a href="#2">
+						<div class="ui huge inverted button" id="introBtn">
+							Learn More About Me
+							<i class="fas fa-arrow-right introArrow"></i>
+						</div>
+					</a>
 				</div>
-				<div class="ui container">
+				<div class="ui container animated fadeInUp slow" id="introMenu">
 					<div class="ui large secondary inverted pointing menu centered">
 						<a class="active item" href="#1">Home</a>
 						<a class="item" href="#2">About Me</a>
@@ -49,25 +51,65 @@
 			</div>
 		</div>
 		<div class="ui inverted" id="2">
-			<div class="ui centered grid">
-				<div class="three wide column center aligned" data-aos="fade-down">
+			<div class="ui centered row grid">
+				<div class="sixteen wide column center aligned" data-aos="fade-down">
 					<h1>About Me</h1>
 				</div>
 			</div>
-			<div class="ui grid stackable centered">
-				<div class="five wide column" data-aos="fade-right">
-					<div class="ui segment">
-						<img
-							class="ui medium circular image fluid centered"
-							id="bioImg"
-							src="assetts/media/bio.JPG"
-							alt="Bio Picture"
-						/>
+			<div class="ui grid row stackable centered">
+				<div class="row">
+					<div class="five wide column" data-aos="fade-right">
+						<div class="ui segment">
+							<img
+								class="ui medium circular image fluid centered"
+								id="bioImg"
+								src="assetts/media/bio.JPG"
+								alt="Bio Picture"
+							/>
+						</div>
+					</div>
+					<div class="eight wide column" data-aos="fade-left">
+						<div class="ui segment" id="aboutMeSegment">
+							<p id="aboutMe">
+								Hello, my name is Kent Okazaki and I am a web developer. I am
+								taking a web development boot camp course at UCSD by TrilogyEd.
+								I have background in programming languages such as Java and C++.
+								Due to curiosity, I introduced myself into programming through
+								modding video games and rooting android devices during my four
+								years of highschool. I created addon contents for games such as
+								ArmA2 and ArmA3. In my sophomore year of community college, I
+								took a Java class for a semester. I have always been into
+								techonology. I decided to look into web development because I
+								was curious to see how every website is created. Moreover, I
+								wanted to challenge myself and learn more about programming.
+							</p>
+						</div>
 					</div>
 				</div>
-				<div class="eight wide column" data-aos="fade-left">
-					<div class="ui segment">
-						<p id="aboutMe"></p>
+				<div class="row" data-aos="fade-in">
+					<div class="ui thirteen wide column">
+						<div class="ui horizontal segments">
+							<div class="ui segment center aligned" data-aos="fade-down" data-aos-delay="300">
+								<span style="font-size: 10rem;">
+									<i class="fab fa-html5"></i>
+								</span>
+							</div>
+							<div class="ui segment center aligned" data-aos="fade-down" data-aos-delay="400">
+								<span style="font-size: 10rem;">
+									<i class="fas fa-mobile-alt"></i>
+								</span>
+							</div>
+							<div class="ui segment center aligned" data-aos="fade-down" data-aos-delay="500">
+								<span style="font-size: 10rem;">
+									<i class="fab fa-js-square"></i>
+								</span>
+							</div>
+							<div class="ui segment center aligned" data-aos="fade-down" data-aos-delay="600">
+								<span style="font-size: 10rem;">
+									<i class="fab fa-node"></i>
+								</span>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>

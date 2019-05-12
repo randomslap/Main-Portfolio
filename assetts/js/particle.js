@@ -53,3 +53,7 @@ particlesJS("particles-js", {
 	},
 	retina_detect: true,
 });
+
+if ($("canvas").hasClass("particles-js-canvas-el")) {
+	$(".particles-js-canvas-el").addClass("animated fadeIn faster");
+}
