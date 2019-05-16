@@ -1,3 +1,15 @@
+/* Smooth Scroll */
+
+html {
+	scroll-behavior: smooth;
+}
+
+/* Font */
+
+.font {
+	font-family: "IBM Plex Sans", sans-serif !important;
+}
+
 /* Intro */
 
 .masthead.segment {
@@ -40,6 +52,10 @@
 	transform: rotate(90deg);
 }
 
+/* Vertical Nav
+
+
+
 /* About Me */
 
 .ui img#bioImg {
@@ -49,6 +65,26 @@
 
 div.eight #aboutMeSegment {
 	margin-top: 5em !important;
+}
+
+div.ui.segment span {
+	font-size: 10vw;
+}
+
+div.ui.segment h2.iconFont {
+	font-size: 2.25vw;
+}
+
+div.ui.segment i.fa-html5 {
+	color: orangered;
+}
+
+div.ui.segment i.fa-lightbulb {
+	color: yellow;
+}
+
+div.ui.segment i.fa-node {
+	color: green;
 }
 
 p#aboutMe {
@@ -61,10 +97,16 @@ p#aboutMe {
 	#introMenu {
 		display: none;
 	}
-	.masthead.segment{
-		margin-bottom: 3em !important; 
+	.masthead.segment {
+		margin-bottom: 3em !important;
 	}
 
+	div.eight #aboutMeSegment {
+		margin-top: 0em !important;
+	}
+}
+
+@media (max-width: 1200px) {
 	div.eight #aboutMeSegment {
 		margin-top: 0em !important;
 	}
